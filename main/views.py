@@ -4,7 +4,8 @@ from django.contrib import messages
 
 def index(request):
     if request.method == 'POST':
-        # The POST request returns a dictionary in which the second key is the button's name
+        # The POST request returns a dictionary in which
+        # the second key is the button's name
         page = list(request.POST)[1]
         return redirect(f'{page}')
     return render(request, 'index.html')
@@ -12,6 +13,8 @@ def index(request):
 def create(request):
     if request.method == "POST":
         create_form = request.POST
+        # The Django framework offers a 'create' function 
+        # that adds objects to the Model (and to the database)
         BookList.objects.create(
             title=create_form['title'], 
             author=create_form['author'], 
