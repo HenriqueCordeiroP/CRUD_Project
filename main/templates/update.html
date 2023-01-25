@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Update</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <p>
+      Insert a book title and the updated information. The book will be updated
+      according to its title.
+    </p>
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <form method="POST" action="">
+      {%csrf_token%}
+      <h4>Book Title:</h4>
+      <input type="text" name="title" placeholder="Title Of The Book" />
+      <h4>Author:</h4>
+      <input type="text" name="author" placeholder="Author O. T. Book" />
+      <h4>Year of Release:</h4>
+      <input type="text" name="year" placeholder="2004" />
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+    <script src="" async defer></script>
+  </body>
+</html>
