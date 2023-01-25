@@ -23,7 +23,7 @@ python3 manage.py runserver
 ```
 
 ## Furthermore
-I plan to integrate an API for study purposes and also a Front End so it's easier to look at (lol).
+I plan on integrating an API for study purposes and also a Front End so it's easier to look at (lol).
 
 ## Author
 [Henrique Cordeiro](https://www.linkedin.com/in/henrique-cordeiro-031315239/) - Computer Science Undergraduate @ CESAR School.
